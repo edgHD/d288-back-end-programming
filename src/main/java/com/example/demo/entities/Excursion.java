@@ -28,7 +28,7 @@ public class Excursion {
     @Column(name = "excursion_price")
     private BigDecimal excursion_price;
 
-    @Column(name = "image_URL")
+    @Column(name = "image_url")
     private String image_URL;
 
     @CreationTimestamp

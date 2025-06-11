@@ -36,6 +36,13 @@ public class Division {
     @JoinColumn(name = "country_id")
     private Country country;
 
+    @Column(name = "country_id", insertable = false, updatable = false)
+    private Long country_id;
+    public void setCountry(Country country) {
+        this.country = country;
+        this.country_id = country.getId();
+    }
+
     @OneToMany(mappedBy = "division")
     private Set<Customer> customers = new HashSet<>();
 }
