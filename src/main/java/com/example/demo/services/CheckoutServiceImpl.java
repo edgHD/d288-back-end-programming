@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.UUID;
 
 @Service
-public class CheckoutServiceImpl implements CheckoutService{
+public class CheckoutServiceImpl implements CheckoutService {
 
     @Autowired
     private CustomerRepository customerRepository;
